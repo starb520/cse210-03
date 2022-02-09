@@ -11,9 +11,11 @@ class Jumper:
         x = 0
         for i in range(x, len(self._parachute)):
             print(self._parachute[i])
+        pass
 
     def man(self):
         for i in range(len(self._man)):
             print(self._man)
+        pass
 
     
