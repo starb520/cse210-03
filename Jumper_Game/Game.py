@@ -18,6 +18,7 @@ class Game:
 
 
     def input(self):
+        pass
 
 
 
@@ -49,10 +50,4 @@ class Game:
 #     if word_blanks[i] == True:
 #         print(rand_word._word[i], end=" ")
 #     else:
-        print("_", end=" ")
-
-
-
-
-
-
+#         print("_", end=" ")
