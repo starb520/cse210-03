@@ -59,6 +59,7 @@ class Game:
             self._num_wrong_guess += 1
 
 
+<<<<<<< HEAD
                 
     def _do_outputs(self):
         '''Print out picture. Print the word/blanks '''
@@ -79,6 +80,10 @@ class Game:
             self._terminal.write_text("Thanks for playing.")
             self._is_playing = False
              
+=======
+    def input(self):
+        pass
+>>>>>>> 67ffae6369b407133287ca76d7be64de72d0a3e8
 
 
 
@@ -115,6 +120,7 @@ game.play_game()
 #     if word_blanks[i] == True:
 #         print(rand_word._word[i], end=" ")
 #     else:
+<<<<<<< HEAD
         # print("_", end=" ")
 
 
@@ -122,3 +128,6 @@ game.play_game()
 
 
 
+=======
+#         print("_", end=" ")
+>>>>>>> 67ffae6369b407133287ca76d7be64de72d0a3e8
