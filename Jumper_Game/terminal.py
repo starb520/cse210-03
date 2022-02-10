@@ -1,3 +1,4 @@
+
 class Terminal:
     """A service that handles terminal operations.
     

@@ -1,3 +1,4 @@
+
 import random
 
 class Word:
@@ -7,16 +8,15 @@ class Word:
     def __init__(self):
 
         # This is a list of words. Could import a dictionary to supply the
-        # list of words. 
+        # list of words or files for longer list and a bigger variety. 
         self._word_list = ["cat", "dog", "red", "rain"]
 
     def random_word(self):
         '''Generate a random word from a list of words.'''
+
+        # Return the randomly chosen word.
         return random.choice(self._word_list)
         
 
-        # Not sure if self._word needs to be returned since the method has access
-        # to it's attributes.
-        # return self._word
 
 
