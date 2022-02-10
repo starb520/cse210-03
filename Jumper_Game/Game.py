@@ -115,7 +115,6 @@ game.play_game()
 #     if word_blanks[i] == True:
 #         print(rand_word._word[i], end=" ")
 #     else:
-<<<<<<< HEAD
         # print("_", end=" ")
 
 
@@ -123,6 +122,3 @@ game.play_game()
 
 
 
-=======
-#         print("_", end=" ")
->>>>>>> 67ffae6369b407133287ca76d7be64de72d0a3e8
