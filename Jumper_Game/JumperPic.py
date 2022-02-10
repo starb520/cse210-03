@@ -5,17 +5,20 @@ class Jumper:
     def __init__(self):
         self._parachute = ["   ___   ", "  /___\  ", "  \   /  ","   \ /   " ]
         self._man       = ["    O    ", "   /|\   ", "   / \  "]
-
-    def parachute_pic(self):
+        self._ground    = " ^^^^^^^  "
+        
+    def parachute_pic(self, wrong_guesses):
         print()
-        x = 0
-        for i in range(x, len(self._parachute)):
+       
+        for i in range(wrong_guesses, len(self._parachute)):
             print(self._parachute[i])
-        pass
+        
 
     def man(self):
         for i in range(len(self._man)):
-            print(self._man)
-        pass
+            print(self._man[i])
+        print(self._ground)
+        
+    
 
     
