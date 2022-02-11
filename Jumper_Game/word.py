@@ -1,21 +1,32 @@
 
 import random
 
+
 class Word:
     '''Has access to a random list of words. Has a function to choose a word
      from the random list of words.'''
 
     def __init__(self):
 
-        # This is a list of words. Could import a dictionary to supply the
-        # list of words or files for longer list and a bigger variety. 
-        self._word_list = ["cat", "dog", "red", "rain"]
+        # These are the three lists of words with different difficulties
+        self._word_list_easy = ["cat", "dog", "red", "pot"]
+        self._word_list_med = ["rain", "wear", "moon"]
+        self._word_list_hard = ["wonder", "plenty", "teacher", "ebony"]
 
-    def random_word(self):
+    def random_word(self, difficulty):
         '''Generate a random word from a list of words.'''
-
-        # Return the randomly chosen word.
-        return random.choice(self._word_list)
+        if difficulty == 1:
+            return random.choice(self._word_list_easy)
+        elif difficulty == 2:
+            return random.choice(self._word_list_med)
+        elif difficulty == 3:
+            return random.choice(self._word_list_hard)
+        else:
+            print("A WHOLE ERROR")
+            #REMOVE THESE LINES
+            return random.choice(self._word_list_hard)
+        # Return the randomly chosen word according to the difficulty selected.
+        
         
 
 

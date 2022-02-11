@@ -19,7 +19,8 @@ class Game:
     def play_game(self):
         '''Calls the input, update, and output methods. Remember to 
            call random word to create new random word to play again.'''
-        self._word = self._rand_word.random_word()
+        self._difficulty = self._terminal.read_text("Enter in a level of difficulty [1-3]: ")
+        self._word = self._rand_word.random_word(int(self._difficulty))
         self._jumper.parachute_pic(self._num_wrong_guess)
         self._jumper.man()
         self._blanks = ["_"] * len(self._word)
@@ -116,11 +117,6 @@ class Game:
             self._terminal.write_text("Thanks for playing.")
             self._is_playing = False
                
-
-
-
-
-
 
 
 
