@@ -21,10 +21,6 @@ class Word:
             return random.choice(self._word_list_med)
         elif difficulty == 3:
             return random.choice(self._word_list_hard)
-        else:
-            print("A WHOLE ERROR")
-            #REMOVE THESE LINES
-            return random.choice(self._word_list_hard)
         # Return the randomly chosen word according to the difficulty selected.
         
         
